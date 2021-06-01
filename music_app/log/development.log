@@ -117,3 +117,25 @@ Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
 ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
 
 Started POST "/__better_errors/9a1bb4f1756a4240/variables" for ::1 at 2021-06-01 17:08:41 -0400
+Started POST "/users" for ::1 at 2021-06-01 17:20:20 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"ba@na.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/492adc7b466ae749/variables" for ::1 at 2021-06-01 17:20:20 -0400
+Started POST "/users" for ::1 at 2021-06-01 17:20:29 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"ba@na.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::InvalidAuthenticityToken - ActionController::InvalidAuthenticityToken:
+
+Started POST "/__better_errors/0ce9b30effed396e/variables" for ::1 at 2021-06-01 17:20:29 -0400

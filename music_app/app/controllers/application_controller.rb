@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base #CELLL
+  helper_method :current_user, :logged_in?, :log_in_user!
 
   def current_user
     #return nil unless session[:session_token]
@@ -9,7 +10,7 @@ class ApplicationController < ActionController::Base #CELLL
   def ensure_logged_in #this might be require_user!
   end
 
-  def login!(user)
+  def log_in_user!(user)
     session[:session_token] = user.reset_session_token!
   end
 
