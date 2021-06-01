@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     # debugger
     if @user.save!
       login!(@user)
-      #redirect_to 
+      redirect_to users_url(@user.id)
     else
       render :new
     end

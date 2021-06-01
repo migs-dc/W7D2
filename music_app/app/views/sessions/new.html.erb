@@ -1,5 +1,5 @@
 <h1>SIGN UP</h1>
-<form action="<%= users_url %>" method="POST">
+<form action="<%= session_url %>" method="POST">
   <input
     type="hidden"
     name="authenticity_token"
@@ -15,6 +15,6 @@
     <input type="password" id="password" name=user[password]>
   </p>
 
-  <button>Create User</button>
+  <input type="submit" value="Login">
 
 </form>
